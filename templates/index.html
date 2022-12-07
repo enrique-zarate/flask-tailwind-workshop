@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mi pagina</title>
+  </head>
+  <body class="bg-orange-200">
+    <!--flexbox-->
+    <!-- encerramos el div contenedor para poder centrar todo el contenido-->
+    <div class="flex justify-center mt-5">
+      <!-- contenedor de todo el contenido (imagen escrito y texto)-->
+      <div
+        class="bg-white max-w-sm border border-gray-200 rounded-lg shadow-lg"
+      >
+        <img
+          class="rounded-t-lg"
+          src="{{ personaje['image'] }}"
+          alt="aurora boreal"
+        />
+        <div class="p-5">
+          <h5 class="mb-2 text-xl text-center font-bold">
+            {{ personaje['name'] }}
+          </h5>
+          <p class="mb-3 font-normal text-gray-600 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga qui,
+            suscipit, doloribus ullam facilis alias non quisquam accusamus enim
+            veniam hic. Odio ipsam ex harum fugiat, expedita nesciunt fugit rem!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
